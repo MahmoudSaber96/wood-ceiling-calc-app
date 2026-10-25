@@ -18,17 +18,17 @@
 
     <div class="setup-field">
       <label>اسم القافلة</label>
-      <input type="text" id="set-convoy" placeholder="مثال: قافلة عمر بن الخطاب">
+      <input type="text" id="set-convoy" placeholder="مثال:عمر بهاء  ">
     </div>
     <div class="setup-field">
       <label>اسم الفريق</label>
-      <input type="text" id="set-team" placeholder="مثال: فريق 7">
+      <input type="text" id="set-team" placeholder="مثال:إعمار">
     </div>
 
     <div class="setup-divider">— مسؤول القافلة —</div>
     <div class="setup-field">
       <label>الاسم</label>
-      <input type="text" id="set-mgr1-name" placeholder="مثال: أحمد محمود">
+      <input type="text" id="set-mgr1-name" placeholder="مثال: أحمد ">
     </div>
     <div class="setup-field">
       <label>رقم الهاتف</label>
@@ -38,7 +38,7 @@
     <div class="setup-divider">— مسؤول الأسقف —</div>
     <div class="setup-field">
       <label>الاسم</label>
-      <input type="text" id="set-mgr2-name" placeholder="مثال: محمد علي">
+      <input type="text" id="set-mgr2-name" placeholder="مثال: محمد ">
     </div>
     <div class="setup-field">
       <label>رقم الهاتف</label>
@@ -89,7 +89,7 @@
     </div>
     <input type="file" id="file-inp" accept=".csv,.xlsx,.xls,.txt" style="display:none" onchange="Cases.importFromFile(event)">
     <p style="font-size:11px;color:#718096;margin:8px 0 4px">الصق خلايا من الإكسل مباشرة (Ctrl+V) أو استخدم زر اللصق التلقائي:</p>
-    <textarea id="paste-area" placeholder="A001&#9;غاده التوني&#9;490&#9;400"></textarea>
+    <textarea id="paste-area" placeholder="A001&#9;أحمد محمد &#9;490&#9;400"></textarea>
     
     <div class="btn-row" style="margin-top:8px">
       <button class="btn btn-outline" onclick="Cases.importFromPaste()">📋 استيراد الملصق</button>
@@ -100,9 +100,9 @@
   <div class="card">
     <h3>➕ إضافة سقف جديد</h3>
     <div class="row"><label>الكود (اختياري)</label><input type="text" id="inp-code" placeholder="A001" style="direction:ltr;text-align:center;font-weight:600"></div>
-    <div class="row"><label>اسم الحالة</label><input type="text" id="inp-name" placeholder="غاده التوني"></div>
-    <div class="row"><label>الطول (سم)</label><input type="number" id="inp-length" placeholder="490" inputmode="decimal"></div>
-    <div class="row"><label>العرض (سم)</label><input type="number" id="inp-width" placeholder="400" inputmode="decimal"></div>
+    <div class="row"><label>اسم الحالة</label><input type="text" id="inp-name" placeholder="xxxxxx"></div>
+    <div class="row"><label>الطول (سم)</label><input type="number" id="inp-length" placeholder="اكبر ضلع فى الطول" inputmode="decimal"></div>
+    <div class="row"><label>العرض (سم)</label><input type="number" id="inp-width" placeholder="اطول ضلع فى العرض " inputmode="decimal"></div>
     <button class="btn btn-primary btn-block" onclick="Cases.addCase()">إضافة</button>
   </div>
 
@@ -191,7 +191,6 @@
   <div class="empty" id="details-empty">لا توجد بيانات</div>
 </div>
 
-<!-- ─────── تبويب 5: توزيع الخشب ─────── -->
 <!-- ─────── تبويب 5: توزيع الخشب ─────── -->
 <div class="page" id="page-dist">
   <div class="btn-row" style="margin-bottom:10px">
