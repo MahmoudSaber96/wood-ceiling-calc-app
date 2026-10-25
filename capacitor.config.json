@@ -1,0 +1,6 @@
+{
+  "appId": "com.woodceiling.app",
+  "appName": "حساب أسقف الخشب",
+  "webDir": "www",
+  "android": { "allowMixedContent": false }
+}

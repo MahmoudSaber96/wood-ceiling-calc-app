@@ -1,0 +1,18 @@
+{
+  "name": "wood-ceiling-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:www": "node scripts/build-www.js",
+    "android:prepare": "npm run build:www && (test -d android || npx cap add android) && node scripts/patch-android.js && npx cap sync android",
+    "android:apk": "npm run android:prepare && cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/filesystem": "^6.0.1",
+    "@capacitor/share": "^6.0.2",
+    "xlsx": "0.18.5"
+  }
+}
